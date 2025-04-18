@@ -11,7 +11,7 @@ async def is_admin(event):
     return user.is_admin
 
 # handle /all command
-@client.on(events.NewMessage(pattern='/all'))
+@client.on(events.NewMessage(pattern='/ناديلي_الفحلات'))
 async def handler(event):
     if await is_admin(event):
         await tagAll(event)
